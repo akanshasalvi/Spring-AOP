@@ -20,7 +20,7 @@ public class LoggingAdvice implements MethodInterceptor{
 				System.out.println("Before entering"+methodName+"("+args[i]);
 				continue;
 			}
-			System.out.println(",");
+			System.out.println(","+args[i]);
 		}
 		System.out.println(")");
 		
