@@ -11,7 +11,7 @@ public class LoggingAdvice implements MethodInterceptor{
 		String methodName = methodinvocation.getMethod().getName();
 		Object[] args = methodinvocation.getArguments();
 		
-		System.out.println("Entering in method"+methodName+"with arguments ("+args[0]+","+args[1]+")");
+		System.out.println("Entering in method "+methodName+" with arguments ("+args[0]+","+args[1]+")");
 		
 		Object ret = methodinvocation.proceed();
 		
